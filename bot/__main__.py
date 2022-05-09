@@ -63,15 +63,15 @@ def stats(update, context):
             f'<b>❖ Memory Total:</b> {mem_t}\n'\
             f'<b>❖ Memory Free:</b> {mem_a}\n'\
             f'<b>❖ Memory Used:</b> {mem_u}\n\n'\
-            f'<b>❖ Join Us @mirror_247_chennel ❖</b>\n'
+            f'<b>❖ Join Us @MalluMovies_Links ❖</b>\n'
     sendMessage(stats, context.bot, update.message)
 
 
 def start(update, context):
     buttons = ButtonMaker()
     buttons.buildbutton("Group", "https://t.me/+1ivP1aO-bRo0Yzg1")
-    buttons.buildbutton("Channel", "https://t.me/mirror_247_chennel")
-    buttons.buildbutton("Maintainer", "https://t.me/rk_shaju")
+    buttons.buildbutton("Owner", "https://t.me/zkp143")
+    buttons.buildbutton("Maintainer", "https://t.me/zkp143")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(3))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
@@ -275,7 +275,7 @@ def main():
     if ospath.isfile(".restartmsg"):
         with open(".restartmsg") as f:
             chat_id, msg_id = map(int, f)
-        bot.edit_message_text("❖ Join Us @mirror_247_chennel ❖", chat_id, msg_id)
+        bot.edit_message_text("❖ Join Us @MalluMovies_Links ❖", chat_id, msg_id)
         osremove(".restartmsg")
 
     start_handler = CommandHandler(BotCommands.StartCommand, start, run_async=True)
@@ -295,7 +295,7 @@ def main():
     dispatcher.add_handler(stats_handler)
     dispatcher.add_handler(log_handler)
     updater.start_polling(drop_pending_updates=IGNORE_PENDING_REQUESTS)
-    LOGGER.info("❖ Join Us @mirror_247_chennel ❖")
+    LOGGER.info("❖ Join Us @MalluMovies_Links ❖")
     signal(SIGINT, exit_clean_up)
     if rss_session is not None:
         rss_session.start()
