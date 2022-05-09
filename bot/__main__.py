@@ -252,9 +252,9 @@ def main():
                 if ospath.isfile(".restartmsg"):
                     with open(".restartmsg") as f:
                         chat_id, msg_id = map(int, f)
-                    msg = '❖ Join Us @mirror_247_chennel ❖'
+                    msg = '❖ Join Us @MalluMovies_Links ❖'
                 else:
-                    msg = '❖ Join Us @mirror_247_chennel ❖'
+                    msg = '❖ Join Us @MalluMovies_Links ❖'
                 for tag, links in data.items():
                      msg += f"\n\n{tag}: "
                      for index, link in enumerate(links, start=1):
