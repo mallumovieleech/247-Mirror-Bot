@@ -73,10 +73,10 @@ class TelegraphHelper:
                     nxt_page += 1
             self.edit_page(
                 path = path[prev_page],
-                title = '247 Mirror Bot Torrent Search',
+                title = 'MM Mirror Bot Torrent Search',
                 content=content
             )
         return
 
 
-telegraph=TelegraphHelper('247 Mirror Chennel', 'https://t.me/mirror_247_chennel')
+telegraph=TelegraphHelper('MM Mirror Group', 'https://t.me/MalluMovies_Links')
